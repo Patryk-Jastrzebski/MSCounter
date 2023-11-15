@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct MultisportCounterApp: App {
+    init() {
+        RealmManager.shared.configureRealm()
+    }
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            DashboardScreen(viewModel: DashboardViewModel())
         }
     }
 }

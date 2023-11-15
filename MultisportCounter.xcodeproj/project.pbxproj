@@ -8,17 +8,78 @@
 
 /* Begin PBXBuildFile section */
 		3D0792962AF655D500F515E1 /* MultisportCounterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0792952AF655D500F515E1 /* MultisportCounterApp.swift */; };
-		3D0792982AF655D500F515E1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0792972AF655D500F515E1 /* ContentView.swift */; };
 		3D07929A2AF655D500F515E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D0792992AF655D500F515E1 /* Assets.xcassets */; };
 		3D07929D2AF655D500F515E1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D07929C2AF655D500F515E1 /* Preview Assets.xcassets */; };
+		3D0792A82AF656C600F515E1 /* DashboardScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0792A72AF656C600F515E1 /* DashboardScreen.swift */; };
+		3D0792AA2AF656D300F515E1 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0792A92AF656D300F515E1 /* DashboardViewModel.swift */; };
+		3D0792AC2AF6576E00F515E1 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0792AB2AF6576E00F515E1 /* Entry.swift */; };
+		3DB578852AFC109200A24611 /* DateFormatterHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB578842AFC109200A24611 /* DateFormatterHelper.swift */; };
+		3DB5788D2AFC115800A24611 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 3DB5788C2AFC115800A24611 /* Realm */; };
+		3DB5788F2AFC115800A24611 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3DB5788E2AFC115800A24611 /* RealmSwift */; };
+		3DB578922AFC1E9F00A24611 /* AddNewEntryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB578912AFC1E9F00A24611 /* AddNewEntryScreen.swift */; };
+		3DB578952AFC1FA100A24611 /* EntryDetailsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB578942AFC1FA100A24611 /* EntryDetailsScreen.swift */; };
+		3DBACC5A2B055DF900663991 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBACC592B055DF900663991 /* String+Extension.swift */; };
+		3DBACC5C2B05613A00663991 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBACC5B2B05613A00663991 /* RealmManager.swift */; };
+		3DBACC5E2B05717500663991 /* PersistableMSEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBACC5D2B05717500663991 /* PersistableMSEntry.swift */; };
+		3DBACC602B05719400663991 /* MSEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBACC5F2B05719400663991 /* MSEntry.swift */; };
+		3DBACC642B0571E700663991 /* NewEntryNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBACC632B0571E700663991 /* NewEntryNetworking.swift */; };
+		3DBACC662B0571FB00663991 /* MSEntryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBACC652B0571FB00663991 /* MSEntryRequest.swift */; };
+		3DBACC682B05720B00663991 /* MSResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBACC672B05720B00663991 /* MSResponse.swift */; };
+		3DBBFC702AFFDDA1005E454B /* TextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBBFC6F2AFFDDA1005E454B /* TextField+Extension.swift */; };
+		3DBBFC722B014862005E454B /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBBFC712B014862005E454B /* LocationManager.swift */; };
+		3DBBFC752B01550C005E454B /* UserLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBBFC742B01550C005E454B /* UserLocation.swift */; };
+		3DBBFC7D2B015E9A005E454B /* APIVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBBFC772B015E9A005E454B /* APIVersion.swift */; };
+		3DBBFC7E2B015E9A005E454B /* AppErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBBFC782B015E9A005E454B /* AppErrors.swift */; };
+		3DBBFC7F2B015E9A005E454B /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBBFC792B015E9A005E454B /* HttpRequest.swift */; };
+		3DBBFC802B015E9A005E454B /* BaseNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBBFC7A2B015E9A005E454B /* BaseNetworking.swift */; };
+		3DBBFC812B015E9A005E454B /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBBFC7B2B015E9A005E454B /* HttpMethod.swift */; };
+		3DBBFC822B015E9A005E454B /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBBFC7C2B015E9A005E454B /* HttpClient.swift */; };
+		3DBBFC842B016034005E454B /* NewEntryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBBFC832B016034005E454B /* NewEntryService.swift */; };
+		3DBBFC902B04146E005E454B /* IteoLogger in Frameworks */ = {isa = PBXBuildFile; productRef = 3DBBFC8F2B04146E005E454B /* IteoLogger */; };
+		3DBBFC922B0414FC005E454B /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBBFC912B0414FC005E454B /* Logger.swift */; };
+		3DBBFC942B0418B5005E454B /* NearEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBBFC932B0418B5005E454B /* NearEntryView.swift */; };
+		3DBBFC972B041CBD005E454B /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBBFC962B041CBD005E454B /* BaseViewModel.swift */; };
+		3DBBFC9A2B042233005E454B /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBBFC992B042233005E454B /* ErrorView.swift */; };
+		3DBBFC9C2B04229D005E454B /* SimpleAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBBFC9B2B04229D005E454B /* SimpleAction.swift */; };
+		3DBBFC9E2B04231A005E454B /* LoadableContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBBFC9D2B04231A005E454B /* LoadableContent.swift */; };
+		3DBBFCA02B0430AF005E454B /* ModalViewTopIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBBFC9F2B0430AF005E454B /* ModalViewTopIndicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3D0792922AF655D500F515E1 /* MultisportCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultisportCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D0792952AF655D500F515E1 /* MultisportCounterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultisportCounterApp.swift; sourceTree = "<group>"; };
-		3D0792972AF655D500F515E1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3D0792992AF655D500F515E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D07929C2AF655D500F515E1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3D0792A72AF656C600F515E1 /* DashboardScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardScreen.swift; sourceTree = "<group>"; };
+		3D0792A92AF656D300F515E1 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		3D0792AB2AF6576E00F515E1 /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		3DB578842AFC109200A24611 /* DateFormatterHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterHelper.swift; sourceTree = "<group>"; };
+		3DB578912AFC1E9F00A24611 /* AddNewEntryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewEntryScreen.swift; sourceTree = "<group>"; };
+		3DB578942AFC1FA100A24611 /* EntryDetailsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetailsScreen.swift; sourceTree = "<group>"; };
+		3DBACC592B055DF900663991 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		3DBACC5B2B05613A00663991 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		3DBACC5D2B05717500663991 /* PersistableMSEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistableMSEntry.swift; sourceTree = "<group>"; };
+		3DBACC5F2B05719400663991 /* MSEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSEntry.swift; sourceTree = "<group>"; };
+		3DBACC632B0571E700663991 /* NewEntryNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEntryNetworking.swift; sourceTree = "<group>"; };
+		3DBACC652B0571FB00663991 /* MSEntryRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSEntryRequest.swift; sourceTree = "<group>"; };
+		3DBACC672B05720B00663991 /* MSResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSResponse.swift; sourceTree = "<group>"; };
+		3DBBFC6F2AFFDDA1005E454B /* TextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextField+Extension.swift"; sourceTree = "<group>"; };
+		3DBBFC712B014862005E454B /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		3DBBFC742B01550C005E454B /* UserLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocation.swift; sourceTree = "<group>"; };
+		3DBBFC772B015E9A005E454B /* APIVersion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIVersion.swift; sourceTree = "<group>"; };
+		3DBBFC782B015E9A005E454B /* AppErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppErrors.swift; sourceTree = "<group>"; };
+		3DBBFC792B015E9A005E454B /* HttpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
+		3DBBFC7A2B015E9A005E454B /* BaseNetworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNetworking.swift; sourceTree = "<group>"; };
+		3DBBFC7B2B015E9A005E454B /* HttpMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
+		3DBBFC7C2B015E9A005E454B /* HttpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
+		3DBBFC832B016034005E454B /* NewEntryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEntryService.swift; sourceTree = "<group>"; };
+		3DBBFC912B0414FC005E454B /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		3DBBFC932B0418B5005E454B /* NearEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearEntryView.swift; sourceTree = "<group>"; };
+		3DBBFC962B041CBD005E454B /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		3DBBFC992B042233005E454B /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		3DBBFC9B2B04229D005E454B /* SimpleAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAction.swift; sourceTree = "<group>"; };
+		3DBBFC9D2B04231A005E454B /* LoadableContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadableContent.swift; sourceTree = "<group>"; };
+		3DBBFC9F2B0430AF005E454B /* ModalViewTopIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewTopIndicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +87,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DB5788F2AFC115800A24611 /* RealmSwift in Frameworks */,
+				3DBBFC902B04146E005E454B /* IteoLogger in Frameworks */,
+				3DB5788D2AFC115800A24611 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +115,13 @@
 		3D0792942AF655D500F515E1 /* MultisportCounter */ = {
 			isa = PBXGroup;
 			children = (
+				3DBBFC732B0154FE005E454B /* Models */,
+				3DBBFC982B042227005E454B /* SharedUI */,
+				3DBBFC762B015E9A005E454B /* Networking */,
+				3D0792B12AF65C9B00F515E1 /* Extensions */,
+				3D0792A62AF656B200F515E1 /* Screens */,
+				3D0792A32AF6561500F515E1 /* Helpers */,
 				3D0792952AF655D500F515E1 /* MultisportCounterApp.swift */,
-				3D0792972AF655D500F515E1 /* ContentView.swift */,
 				3D0792992AF655D500F515E1 /* Assets.xcassets */,
 				3D07929B2AF655D500F515E1 /* Preview Content */,
 			);
@@ -65,6 +134,110 @@
 				3D07929C2AF655D500F515E1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3D0792A32AF6561500F515E1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3DB578842AFC109200A24611 /* DateFormatterHelper.swift */,
+				3DBBFC712B014862005E454B /* LocationManager.swift */,
+				3DBBFC912B0414FC005E454B /* Logger.swift */,
+				3DBBFC962B041CBD005E454B /* BaseViewModel.swift */,
+				3DBBFC9B2B04229D005E454B /* SimpleAction.swift */,
+				3DBACC5B2B05613A00663991 /* RealmManager.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		3D0792A62AF656B200F515E1 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				3DB578932AFC1F9500A24611 /* EntryDetails */,
+				3DB578902AFC1E8E00A24611 /* AddNewEntry */,
+				3D0792A72AF656C600F515E1 /* DashboardScreen.swift */,
+				3D0792A92AF656D300F515E1 /* DashboardViewModel.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		3D0792B12AF65C9B00F515E1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3DBBFC6F2AFFDDA1005E454B /* TextField+Extension.swift */,
+				3DBACC592B055DF900663991 /* String+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3DB578902AFC1E8E00A24611 /* AddNewEntry */ = {
+			isa = PBXGroup;
+			children = (
+				3DBACC692B05720F00663991 /* MSEntryModels */,
+				3DBACC622B0571D900663991 /* Networking */,
+				3DB578912AFC1E9F00A24611 /* AddNewEntryScreen.swift */,
+				3DBBFC932B0418B5005E454B /* NearEntryView.swift */,
+			);
+			path = AddNewEntry;
+			sourceTree = "<group>";
+		};
+		3DB578932AFC1F9500A24611 /* EntryDetails */ = {
+			isa = PBXGroup;
+			children = (
+				3DB578942AFC1FA100A24611 /* EntryDetailsScreen.swift */,
+			);
+			path = EntryDetails;
+			sourceTree = "<group>";
+		};
+		3DBACC622B0571D900663991 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				3DBBFC832B016034005E454B /* NewEntryService.swift */,
+				3DBACC632B0571E700663991 /* NewEntryNetworking.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		3DBACC692B05720F00663991 /* MSEntryModels */ = {
+			isa = PBXGroup;
+			children = (
+				3D0792AB2AF6576E00F515E1 /* Entry.swift */,
+				3DBACC5F2B05719400663991 /* MSEntry.swift */,
+				3DBACC5D2B05717500663991 /* PersistableMSEntry.swift */,
+				3DBACC652B0571FB00663991 /* MSEntryRequest.swift */,
+				3DBACC672B05720B00663991 /* MSResponse.swift */,
+			);
+			path = MSEntryModels;
+			sourceTree = "<group>";
+		};
+		3DBBFC732B0154FE005E454B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3DBBFC742B01550C005E454B /* UserLocation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3DBBFC762B015E9A005E454B /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				3DBBFC772B015E9A005E454B /* APIVersion.swift */,
+				3DBBFC782B015E9A005E454B /* AppErrors.swift */,
+				3DBBFC792B015E9A005E454B /* HttpRequest.swift */,
+				3DBBFC7A2B015E9A005E454B /* BaseNetworking.swift */,
+				3DBBFC7B2B015E9A005E454B /* HttpMethod.swift */,
+				3DBBFC7C2B015E9A005E454B /* HttpClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		3DBBFC982B042227005E454B /* SharedUI */ = {
+			isa = PBXGroup;
+			children = (
+				3DBBFC992B042233005E454B /* ErrorView.swift */,
+				3DBBFC9D2B04231A005E454B /* LoadableContent.swift */,
+				3DBBFC9F2B0430AF005E454B /* ModalViewTopIndicator.swift */,
+			);
+			path = SharedUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +256,11 @@
 			dependencies = (
 			);
 			name = MultisportCounter;
+			packageProductDependencies = (
+				3DB5788C2AFC115800A24611 /* Realm */,
+				3DB5788E2AFC115800A24611 /* RealmSwift */,
+				3DBBFC8F2B04146E005E454B /* IteoLogger */,
+			);
 			productName = MultisportCounter;
 			productReference = 3D0792922AF655D500F515E1 /* MultisportCounter.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +289,10 @@
 				Base,
 			);
 			mainGroup = 3D0792892AF655D400F515E1;
+			packageReferences = (
+				3DB5788B2AFC115800A24611 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				3DBBFC8E2B04146E005E454B /* XCRemoteSwiftPackageReference "IteoLogger" */,
+			);
 			productRefGroup = 3D0792932AF655D500F515E1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +319,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D0792982AF655D500F515E1 /* ContentView.swift in Sources */,
+				3DBBFC7E2B015E9A005E454B /* AppErrors.swift in Sources */,
+				3DBBFC9C2B04229D005E454B /* SimpleAction.swift in Sources */,
+				3DBACC642B0571E700663991 /* NewEntryNetworking.swift in Sources */,
+				3DBBFC972B041CBD005E454B /* BaseViewModel.swift in Sources */,
+				3D0792AC2AF6576E00F515E1 /* Entry.swift in Sources */,
+				3DBBFC942B0418B5005E454B /* NearEntryView.swift in Sources */,
+				3DBACC662B0571FB00663991 /* MSEntryRequest.swift in Sources */,
+				3DBBFC9A2B042233005E454B /* ErrorView.swift in Sources */,
+				3DBBFCA02B0430AF005E454B /* ModalViewTopIndicator.swift in Sources */,
+				3DB578922AFC1E9F00A24611 /* AddNewEntryScreen.swift in Sources */,
 				3D0792962AF655D500F515E1 /* MultisportCounterApp.swift in Sources */,
+				3DB578952AFC1FA100A24611 /* EntryDetailsScreen.swift in Sources */,
+				3DBBFC7F2B015E9A005E454B /* HttpRequest.swift in Sources */,
+				3DB578852AFC109200A24611 /* DateFormatterHelper.swift in Sources */,
+				3DBBFC812B015E9A005E454B /* HttpMethod.swift in Sources */,
+				3DBACC682B05720B00663991 /* MSResponse.swift in Sources */,
+				3DBACC5C2B05613A00663991 /* RealmManager.swift in Sources */,
+				3DBBFC702AFFDDA1005E454B /* TextField+Extension.swift in Sources */,
+				3DBACC5E2B05717500663991 /* PersistableMSEntry.swift in Sources */,
+				3D0792A82AF656C600F515E1 /* DashboardScreen.swift in Sources */,
+				3DBBFC842B016034005E454B /* NewEntryService.swift in Sources */,
+				3DBACC602B05719400663991 /* MSEntry.swift in Sources */,
+				3DBBFC822B015E9A005E454B /* HttpClient.swift in Sources */,
+				3DBBFC7D2B015E9A005E454B /* APIVersion.swift in Sources */,
+				3DBBFC922B0414FC005E454B /* Logger.swift in Sources */,
+				3D0792AA2AF656D300F515E1 /* DashboardViewModel.swift in Sources */,
+				3DBACC5A2B055DF900663991 /* String+Extension.swift in Sources */,
+				3DBBFC722B014862005E454B /* LocationManager.swift in Sources */,
+				3DBBFC802B015E9A005E454B /* BaseNetworking.swift in Sources */,
+				3DBBFC752B01550C005E454B /* UserLocation.swift in Sources */,
+				3DBBFC9E2B04231A005E454B /* LoadableContent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,7 +406,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +460,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -270,11 +481,14 @@
 				DEVELOPMENT_TEAM = 3TUZXXZK2L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Nie wiem dlaczego ale apka też potrzebuje tego więc daj zgode";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Aby sprawdzić w jakim obiekcie się znajdujesz potrzebuję lokalizacji";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,11 +513,14 @@
 				DEVELOPMENT_TEAM = 3TUZXXZK2L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Nie wiem dlaczego ale apka też potrzebuje tego więc daj zgode";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Aby sprawdzić w jakim obiekcie się znajdujesz potrzebuję lokalizacji";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,6 +556,44 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3DB5788B2AFC115800A24611 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		3DBBFC8E2B04146E005E454B /* XCRemoteSwiftPackageReference "IteoLogger" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/patryk-sredzinski/IteoLogger.git";
+			requirement = {
+				kind = versionRange;
+				maximumVersion = 1.0.23;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3DB5788C2AFC115800A24611 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3DB5788B2AFC115800A24611 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		3DB5788E2AFC115800A24611 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3DB5788B2AFC115800A24611 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		3DBBFC8F2B04146E005E454B /* IteoLogger */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3DBBFC8E2B04146E005E454B /* XCRemoteSwiftPackageReference "IteoLogger" */;
+			productName = IteoLogger;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3D07928A2AF655D400F515E1 /* Project object */;
 }
